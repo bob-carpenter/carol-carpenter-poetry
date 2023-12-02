@@ -4,7 +4,7 @@
 %
 % DOCUMENT CLASS
 % =============================================
-\documentclass[10pt]{article}
+\documentclass[openleft,10pt]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -45,9 +45,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 
-\author{}
-\date{}
-
 \usepackage{fontspec}
   \setmainfont[Ligatures=TeX]{Charter}
   \setsansfont{Lucida Grande}
@@ -61,18 +58,16 @@
 \pdfpagewidth=\paperwidth
 \pdfpageheight=\paperheight
 
-\setlength{\textwidth}{13.014in}
+\setlength{\textwidth}{14.125in}
 \setlength{\textheight}{9.861in}
-\setlength{\oddsidemargin}{-0.75in}
-\setlength{\evensidemargin}{-0.75in}
+\setlength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-1in}
 \setlength{\topmargin}{0in}
 
 
 \renewcommand{\baselinestretch}{1.1}
 \renewcommand{\arraystretch}{1.2}
 \setlength{\tabcolsep}{2pt}
-
-\raggedbottom
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -88,18 +83,16 @@
 \definecolor{darkavocadogreen}{rgb}{0.20, 0.30, 0.01} % A darker shade of avocado green
 \definecolor{darkvintageorange}{rgb}{0.70, 0.40, 0.0} % A darker shade of vintage orange
 
-
+\pagestyle{empty}\pagecolor{darkvintageorange}\color{white}
 \begin{document}
-\pagestyle{empty}
-\pagecolor{darkvintageorange}
-\color{white}
-\noindent
+\noindent%
 \begin{minipage}[t][9.861in][t]{6.625in}
   \noindent
   \centering
   \mbox{ } \hfill
+  \hspace{0.6in}
   \begin{minipage}{3in}
-    \vspace*{-6.5in}
+    \vspace*{-6.25in}
     \sffamily{\bfseries About the Author}
     \\[4pt]
     Carol Carpenter's poems and stories have appeared in numerous online and
@@ -119,14 +112,15 @@ trainer, she now writes full-time in Livonia, Michigan.
 \hfill\mbox{ }\hspace*{0.25in}
 \end{minipage}%
 %
-\hspace*{-0.125in}%
 %
 \begin{minipage}[t][9.861in][t]{0.875in}
+   \hspace*{0.125in}%
     \rotatebox{90}{%
        {\fontsize{40}{40}\sffamily\bfseries stories
          $\mid$ carol carpenter}
      }
 \end{minipage}%
+%   
 \begin{minipage}[t][9.861in][t]{6.625in}
   \noindent
   \vspace*{-6in} \mbox{ }
@@ -141,6 +135,8 @@ trainer, she now writes full-time in Livonia, Michigan.
   \\
   \hspace*{4.585in} {\sffamily new york} \qquad
 \end{minipage}
+\vspace*{-10in}
+\hspace*{-24in}
 \end{document}
 
 
