@@ -2,8 +2,9 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[
-]{article}
+% DOCUMENT CLASS
+% =============================================
+\documentclass[twoside,10pt]{book}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -47,155 +48,103 @@
 \author{}
 \date{}
 
+\usepackage{fontspec}
+  \setmainfont[Ligatures=TeX]{Charter}
+  \setsansfont{Lucida Grande}
+  \setmonofont{American Typewriter}
+  \newfontfamily\chapfont{Charter Black}
+  \newfontfamily\secfont{Charter Black}
+  \newfontfamily\handfont{Bradley Hand}
+
+\setlength{\paperwidth}{6.125in}
+\setlength{\paperheight}{9.25in}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\setlength{\textwidth}{4in}
+\setlength{\textheight}{7in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0.125in}
+\setlength{\topmargin}{-0.25in}
+
+
+\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{2pt}
+
+\raggedbottom
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\fancyfoot[C]{\small\thepage} % small page number in the center of the footer
+\setlength{\footskip}{36pt}
+
+\usepackage{tikz}
+\usepackage{xcolor}
+\definecolor{avocadogreen}{rgb}{0.34, 0.51, 0.01} % An example of avocado green
+\definecolor{vintageorange}{rgb}{0.95, 0.65, 0.0} % An example of vintage orange
+\definecolor{darkavocadogreen}{rgb}{0.20, 0.30, 0.01} % A darker shade of avocado green
+\definecolor{darkvintageorange}{rgb}{0.70, 0.40, 0.0} % A darker shade of vintage orange
+
+
+
+
+% TITLE
+% ======================================================================
 \begin{document}
+\frontmatter
+\pagestyle{empty}
+\pagecolor{darkvintageorange}
+\color{white} % Sets the text color to white
+\begin{center}
+  \vspace*{48pt}
+  \hfill {\fontsize{86}{52}\sffamily\bfseries stories}
+  \\[12pt]
+  \hrule height 1pt
+  \hfill {\fontsize{24}{52}\sffamily carol carpenter}
+  \vfill
+  \hfill {\sffamily colloquial publishing}
+  \\
+  \hfill {\sffamily new york}
+\end{center}
+\color{black} % Sets the text color to white
 
-\textbf{Half title page}
 
-\textbf{\hfill\break
-}
-
-\textbf{List of Prior Publication\\
-}
-
-\textbf{Title Page\\
-}
-
-\textbf{Copyright Page}
-
-© 2020 Mack Carpenter. All rights reserved.
-
+\clearpage
+\pagecolor{white}
+\mbox{}
+\\[36pt]
+Carol Carpenter. 1943--2016.  Stories.  Colloquial Books.  New
+York. 
+\\[12pt]
+\begin{center}
+Copyright \copyright\, Carol Carpenter
+\\[4pt]
+All rights reserved.
+\end{center}
+\vfill
 \begin{quote}
 \emph{This is a work of fiction. Any resemblance to actual events or
 persons, living or dead, is entirely coincidental.}
 \end{quote}
+\vfill
+\vfill
+\null
 
-\textbf{\hfill\break
-}
+\cleardoublepage
+\pagestyle{fancy}
+\tableofcontents
 
-\textbf{\hfill\break
-}
 
-\textbf{\hfill\break
-}
+\mainmatter
+\cleardoublepage
+\part{Fiction}
+\thispagestyle{empty}
 
-\textbf{Contents}
-
-\textbf{Short Stories}
-
-\begin{quote}
-Aunt Hattie Visits 8
-
-Big In the Bars
-
-The Bottom Drawer
-
-The Butterfly Dress
-
-Case Closed
-
-Daily Entries
-
-A Dangerous Life
-
-Double Date
-
-Everything Was Different
-
-A Fine Day
-
-In Winter
-
-A Job
-
-Library Card In My Pocket
-
-A Lot She Knows
-
-The Mapmaker
-
-Minor Adjustments
-
-Not Fast Enough
-
-The Party
-
-The Picnic
-
-The Puppet Show
-
-Queen Anne's Lace and Dandelions
-
-Raspberry Surprise
-
-Real Enough
-
-Rosey's Mother
-
-Rearranging Furniture
-
-Under the Stars
-
-Until She Gets Home
-
-Waiting
-
-When the Birds Sing
-\end{quote}
-
-\textbf{Flash Fiction}
-
-Archeological Dig
-
-\begin{quote}
-By the Book
-
-Charitable Visit
-
-A Comforting Woman
-
-Disappearing Act
-
-Driving Home
-
-For the Birds
-
-Luck Rode My Shoulder
-
-A Man's Best Friend
-
-The Numbers Game
-
-Performance Art
-
-Playing for Love
-
-Rub Out
-
-Sharing Space
-
-Still a Novice: The Mystery Food Reviewer at Work
-
-Takin' Care of Business
-
-Temptation
-
-That's Who I Am
-\end{quote}
-
-White Sunfire
-
-\textbf{\hfill\break
-}
-
-\textbf{Short Stories}
-
-\textbf{\hfill\break
-}
-
-\textbf{\hfill\break
-}
-
-\textbf{Big in the Bars}
+\cleardoublepage
+\chapter{Big in the Bars}
 
 One by one, the shoppers are attracted by the flashing blue light above
 the table. I slice the potatoes into thin wafers, fanning them like a
@@ -464,10 +413,8 @@ on when he's too tired to go home.
 ``No one says you are, you blue-eyed Greek. But you're big in the
 bars.''
 
-\textbf{\hfill\break
-}
-
-\textbf{The Bottom Drawer}
+\cleardoublepage
+\chapter{The Bottom Drawer}
 
 A voice over the kitchen phone. His voice. I've been expecting it.
 ``Tonight,'' he whispers as if he's talking through a handkerchief.
@@ -550,10 +497,9 @@ storeroom where we eat and he reads his poems.
 I hang up without saying goodbye. I know people at work are beginning to
 talk. But that's at work. That's not here.
 
-\textbf{\hfill\break
-}
 
-\textbf{The Butterfly Dress}
+\cleardoublepage
+\chapter{The Butterfly Dress}
 
 Instead of my Saturday morning paper, I find Aunt Hattie's shoe, like a
 warning right outside my door. A pointed-toe purple shoe with
@@ -1063,7 +1009,9 @@ I wink back, hearing in the distance the sound of train whistles and the
 clickety-clack of big steel wheels against\\
 the tracks.
 
-\textbf{Case Closed}
+
+\cleardoublepage
+\chapter{Case Closed}
 
 Turn out the light, mother hollers. Windows slam, doors lock on the
 first floor, shut tight against hitchhikers, rabid bats who fly by
@@ -1109,10 +1057,10 @@ Miss Marple clicks her knitting needles, knowing all the time. Liars and
 murderers are no more than microbes in a glass of water set on the
 kitchen sink. I drink gallons of well water, live dangerously.
 
-\textbf{\hfill\break
-}
 
-\textbf{Computer Cupid}
+
+\cleardoublepage
+\chapter{Computer Cupid}
 
 Some things are tough to figure. If it were all happening to Cami, I
 could understand. She's a cheerleader and real popular. But I'm just
@@ -1234,10 +1182,10 @@ still think of me as the kid you used to beat up in your sandbox.''
 ``Wrong. You don't know everything,'' I say, wondering what to wear to
 the Valentine Dance.
 
-\textbf{\hfill\break
-}
 
-\textbf{Daily Entries}
+
+\cleardoublepage
+\chapter{Daily Entries}
 
 I'm reading Sylvia Plath's \emph{Ariel} when Cornelius pushes my
 shoulder, knocking my chest against the edge of the desk. And I feel
@@ -1502,10 +1450,10 @@ by surprise. But you don't move away.
 
 I'm disappointed. I thought you'd understand.
 
-\textbf{\hfill\break
-}
 
-\textbf{A Dangerous Life}
+
+\cleardoublepage
+\chapter{A Dangerous Life}
 
 On February 2, Eliza decides to give up men the same way she decides to
 shed her winter weight: quick and clean, like snapping lima beans.
@@ -1739,10 +1687,10 @@ magician hands, nimble enough to turn the wheel, rehearsed enough to
 levitate the car in space, held to earth by the invisible strands of her
 beliefs, by her desire to live a more dangerous life.
 
-\textbf{\hfill\break
-}
 
-\textbf{Double Date}
+
+\cleardoublepage
+\chapter{Double Date}
 
 John sits across from me, dips French fries in ketchup as he thinks. I
 drink my coke, trying not to break his concentration.
@@ -2085,10 +2033,10 @@ never did like Mary Beth,'' he shouts back over his shoulder.
 
 I stand up and race after him.
 
-\textbf{\hfill\break
-}
 
-\textbf{Everything Was Different}
+
+\cleardoublepage
+\chapter{Everything Was Different}
 
 The room was a misty grey, but it seemed useless to turn on a light in
 mid-afternoon. Valencia had tried to read the book, but that, too was
@@ -2395,10 +2343,10 @@ window.
 
 She waited, smiling patiently.
 
-\textbf{\hfill\break
-}
 
-\textbf{A Fine Day}
+
+\cleardoublepage
+\chapter{A Fine Day}
 
 The nurse rubs Vaseline on Juanita's swollen finger, twists the wedding
 band over the knuckle. Juanita moans. She isn't ready for the next
@@ -2801,10 +2749,9 @@ a blonde, middle-aged man smiles.
 Juanita has no pictures to show. In the distance, she hears the ice
 cream bell.
 
-\textbf{\hfill\break
-}
 
-\textbf{In Winter}
+\cleardoublepage
+\chapter{In Winter}
 
 All day the words drift in Jeannie's ears, melt now as she lies in her
 single bed, her grand­mother's crazy quilt holding down her body. The
@@ -3103,7 +3050,9 @@ There are words and more words by the two people Jeannie has brought
 back together. She wishes they would both suffocate in all those
 snowflakes so she could push in raisin mouths and carrot noses.
 
-\textbf{A Job}
+
+\cleardoublepage
+\chapter{A Job}
 
 Up until now, I've had it made. Things were easy. Don't get me wrong. I
 didn't go around admitting it to just anyone.
@@ -3389,10 +3338,9 @@ he's kind of cute.
 
 He blushes and says he'll see us both next Saturday.
 
-\textbf{\hfill\break
-}
 
-\textbf{Library Card in My Back Pocket}
+\cleardoublepage
+\chapter{Library Card in My Back Pocket}
 
 When I was a little kid, my mom used to walk a mile with me every week
 to the Jessie Chase Branch Library in Northwest Detroit. I sat at the
@@ -3457,10 +3405,10 @@ could pass through those doors without succumbing to the lure of books.
 Such a magnificent library breathes the history, the humanity, the
 individuality of each person who dares enter.
 
-\textbf{\hfill\break
-}
 
-\textbf{A Lot She Knows}
+
+\cleardoublepage
+\chapter{A Lot She Knows}
 
 The family said Irma should be the one. They argued back and forth on
 the phone late at night and on the weekends when long distance calls
@@ -3677,7 +3625,10 @@ Irma got the other wigs from her suitcase and rejoined Mama at the
 mirror. The two gray heads bent close together as they tried on wigs,
 struck poses, and tried to guess who they were now.
 
-\textbf{The Mapmaker}
+
+
+\cleardoublepage
+\chapter{The Mapmaker}
 
 When Rayna Travis Gullavor gets a notion into her head, it sticks like a
 grain of sand caught in an oyster shell, a gritty irritant calcifying,
@@ -4174,7 +4125,10 @@ lifeguards, out to where salt water buoys her up and the pearls burst
 from their string and dissolve to sand---until then, she must travel
 alone.
 
-\textbf{Minor Adjustments}
+
+
+\cleardoublepage
+\chapter{Minor Adjustments}
 
 Our desperation drove Brittany and me full speed in our hunter green van
 right out to the army surplus store, the one down there on Telegraph,
@@ -4426,10 +4380,10 @@ changed into flowered spring dresses, packed our suitcases, drove the
 few miles to Dearborn, signed in, and immediately found the whirlpools
 where we laid back in the churning water and breathed clean, moist air.
 
-\textbf{\hfill\break
-}
 
-\textbf{Not Fast Enough}
+
+\cleardoublepage
+\chapter{Not Fast Enough}
 
 I may have been only ten years old but I could run faster than any boy
 or girl on our street, faster even than the twelve-year-old boy across
@@ -4498,10 +4452,10 @@ To this day, I'm convinced that the big guy was really thirteen. He
 cheated. I know that in my heart. Just like I know he dumped that
 glorious Siamese Fighting Fish down the sewer after the girls left.
 
-\textbf{\hfill\break
-}
 
-\textbf{The Party}
+
+\cleardoublepage
+\chapter{The Party}
 
 Karen stared at her husband across the room. She watched his lips move
 and leaned forward in her chair trying to hear what he said to the other
@@ -4737,10 +4691,10 @@ all looked black at night. And she stood among the flowers, feeling the
 mascara streak her cheek with darkness, feeling the black rain soak into
 her skin, knowing that someone would come to get her soon.
 
-\textbf{\hfill\break
-}
 
-\textbf{The Picnic}
+
+\cleardoublepage
+\chapter{The Picnic}
 
 She sits at the window watching for him. Still, she isn't looking when
 he swerves up the drive­way, going too fast, always too fast.
@@ -4992,10 +4946,10 @@ When they try to pay her for the lost paddles, she refuses, saying,
 had to wait for the Hunter's Moon,'' she jokes. ``And Hunter's Moon
 isn't the time to be out on the lake.''
 
-\textbf{\hfill\break
-}
 
-\textbf{The Puppet Show}
+
+\cleardoublepage
+\chapter{The Puppet Show}
 
 My life is filled with scenes. The puppeteer improvises, sticks her hand
 inside a memory and wiggles it until it's center stage.
@@ -5331,10 +5285,12 @@ home.''
 I find myself perspiring, getting angry again at this girl who won't
 try, who has inherited my weakness.
 
-\textbf{\hfill\break
-}
 
-\textbf{Queen Anne's Lace and Dandelions}
+
+
+
+\cleardoublepage
+\chapter{Queen Anne's Lace and Dandelions}
 
 If my mother finds out what I'm doing, she'll have conniptions. (I can
 just hear her. ``I don't work all day so you can ride the bus and go
@@ -5894,10 +5850,10 @@ We promise we'll come, and I tell her I'll even bring some beer.
 
 The old woman waves at us until we turn the corner.
 
-\textbf{\hfill\break
-}
 
-\textbf{Raspberry Surprise}
+
+\cleardoublepage
+\chapter{Raspberry Surprise}
 
 It isn't that I'm not appreciated. It's just that like the early morning
 newspaper, I'm missed more when I'm feeling unappreciated. I play games
@@ -6096,10 +6052,10 @@ surprise cookies, which will probably make me ill. I decide to tell Tom
 about the meeting. In fact, I'll even tell him about Veronica Vale.
 It'll be good for a laugh.
 
-\textbf{\hfill\break
-}
 
-\textbf{Real Enough}
+
+\cleardoublepage
+\chapter{Real Enough}
 
 Miriam is cleaning her closets. She throws out the old stuff, saves some
 for Goodwill.
@@ -6458,10 +6414,10 @@ Tomorrow she will bring the lady cuttings from her grape ivy. Ivy grows
 well in dark places, even grows in Canada's cold climate. The lady's
 hands look right for growing ivy.
 
-\textbf{\hfill\break
-}
 
-\textbf{Rearranging Furniture}
+
+\cleardoublepage
+\chapter{Rearranging Furniture}
 
 Mr. Bertilano leans across the desk toward me and balances the pencil
 until the pen falls. Sets it up again. He's the boy with the erector
@@ -6771,10 +6727,10 @@ shake his hand.
 
 It reminds me of the day I moved from my mother's house.
 
-\textbf{\hfill\break
-}
 
-\textbf{Rosy's Mother}
+
+\cleardoublepage
+\chapter{Rosy's Mother}
 
 Three quick knocks, a pause, one louder knock. It's Vera's knuckles
 against the wood, Vera on the other side.
@@ -7066,7 +7022,9 @@ extra material toward the middle and belt it tightly, knowing that with
 all the beer and cookies, I'll soon fill out, maybe even burst the
 seams.
 
-\textbf{Under the Stars}
+
+\cleardoublepage
+\chapter{Under the Stars}
 
 Even though I don't like steak, especially when it's pink in the middle,
 I cut it into neat pieces and chew, remembering to keep my mouth closed.
@@ -7291,10 +7249,10 @@ I'll ask Mom and Dad not to mention it to Bob. And I'll ask Bob to
 button his shirt so my parents won't think he's a bad influence or
 anything like that.
 
-\textbf{\hfill\break
-}
 
-\textbf{Until She Gets Home}
+
+\cleardoublepage
+\chapter{Until She Gets Home}
 
 Five years ago. At Amelia's wedding, Mother Ernestine takes John aside
 and whispers, her wet lips moving against his ear. John says something
@@ -7561,10 +7519,11 @@ knees.
 
 Amelia will buy John a rifle for his birthday next month. Maybe she will
 buy herself a rifle for Christmas in memory of the son she'll never
-have.\textbf{\hfill\break
-}
+have.
 
-\textbf{Waiting}
+
+\cleardoublepage
+\chapter{Waiting}
 
 I hear Marilyn before I see her. Her shoes tapping against the oak
 floor, coming fast around the corner.
@@ -7840,10 +7799,10 @@ dressed in costume and the moon is full. And I do stop at palm readers
 in different towns whenever the mood hits me. But I still haven't run
 across anyone who could read me like Lillian did.
 
-\textbf{\hfill\break
-}
 
-\textbf{When the Birds Sing}
+
+\cleardoublepage
+\chapter{When the Birds Sing}
 
 I pay off the Checker cab driver, tipping him a dollar more than I
 usually tip, because I'm feel­ing a bit frightened and on edge. Sort of
@@ -8422,12 +8381,14 @@ still stacked on Eartha's night stand, her empty bed stripped of sheets
 and my black purse that I told the card-playing man to just hold until
 next time I am there.
 
-\textbf{Flash Fiction}
+\cleardoublepage
+\thispagestyle{empty}
+\part{Flash Fiction}
 
-\textbf{\hfill\break
-}
 
-\textbf{Archeological Dig}
+
+\cleardoublepage
+\chapter{Archeological Dig}
 
 In my father's garage, I uncover artifacts of his past lives---my
 third-grade math tests boxed with his wife's valentines, Merrill Lynch
@@ -8436,10 +8397,10 @@ the Ohio farm and hitchhiked to Detroit, an empty box of Miracle Grow.
 
 What I did not find spoke loudest.
 
-\textbf{\hfill\break
-}
 
-\textbf{By the Book}
+
+\cleardoublepage
+\chapter{By the Book}
 
 Muriel knew all the ways to get a man. After her fifth divorce at
 sixty-five, she knew how to get rid of them, too. She planned to write a
@@ -8509,7 +8470,10 @@ Muriel hated hearing Ed's sobs. She knew in time he would have grown to
 love her. The good side, Muriel thought to herself, was that she would
 now have plenty of time to write her book.
 
-\textbf{Charitable Visit}
+
+
+\cleardoublepage
+\chapter{Charitable Visit}
 
 Martha ran into the living room, a mouse trap dangling from her ring
 finger.
@@ -8522,10 +8486,10 @@ ever do you get in these fixes?''
 ``We'll pray for you,'' Martha said, flashing the money from my lingerie
 drawer.
 
-\textbf{\hfill\break
-}
 
-\textbf{A Comforting Woman}
+
+\cleardoublepage
+\chapter{A Comforting Woman}
 
 When I poured that Speedway gasoline, all five gallons, into the yellow
 jacket nest down by the back gate, I never figured Erlene would get as
@@ -8603,10 +8567,10 @@ way she took charge. Told that guard exactly what to do. I knew how he
 must be feeling. Something real comforting about a woman who knew her
 own mind and never forgot anything.
 
-\textbf{\hfill\break
-}
 
-\textbf{Disappearing Act}
+
+\cleardoublepage
+\chapter{Disappearing Act}
 
 Betty had no choice. She was losing parts of herself, bit by bit,
 sometimes a whole chunk. At 57, her bones were thinning. Her gall
@@ -8635,10 +8599,11 @@ pinballs in her hair. She looked straight up through the porch to the
 right of the rotted gutters and all she saw was blue sky. Then she heard
 a bell, a pinball scoring the jackpot, as the bald head of a demolition
 worker peeked over the jagged boards and reached down to help her
-up.\textbf{\hfill\break
-}
+up.
 
-\textbf{Driving Home}
+
+\cleardoublepage
+\chapter{Driving Home}
 
 At 65, Bernie lost his license. One too many times he got caught driving
 recklessly.
@@ -8652,10 +8617,10 @@ and Medicare approved his own electric cart---all chrome and zoom.
 Bernie revved the motor, zipped off the top step into noise and
 darkness. No license required.
 
-\textbf{\hfill\break
-}
 
-\textbf{For the Birds}
+
+\cleardoublepage
+\chapter{For the Birds}
 
 Bird poop slid down our picture windows, plopped on our heads as we ran
 to our cars, polka-dotted our sidewalks, filled our nostrils with its
@@ -8739,10 +8704,10 @@ followed her up into the truck. She chose to ride in back with her
 family. It took us twenty trips over the next couple of weeks to set
 them free. Now, we're both busy cleaning up the neighborhood.
 
-\textbf{\hfill\break
-}
 
-\textbf{Luck Rode My Shoulder}
+
+\cleardoublepage
+\chapter{Luck Rode My Shoulder}
 
 When the ATM ate my card at midnight, I kicked that heap of metal twice
 and drew back for a third kick when those twenties spewed out of the
@@ -8782,10 +8747,10 @@ stories into a scrapbook we carried with us. Luck continued to ride my
 shoulder like a Great Dane---sleek, loyal, pedigreed, and smart enough
 to sniff out money.
 
-\textbf{\hfill\break
-}
 
-\textbf{A Man's Best Friend}
+
+\cleardoublepage
+\chapter{A Man's Best Friend}
 
 Mary read the personals to Spirit, her gray terrier. ``Men want too
 much,'' Mary sighed. ``They want you---long walks, devotion, loyalty,
@@ -8796,10 +8761,10 @@ With Spirit licking her hand, Mary answered Macho Man's ad.
 Macho Man responded, asking Spirit for a coffee date, demanding she
 leave the unruly Mary at home where dogs belong.
 
-\textbf{\hfill\break
-}
 
-\textbf{The Numbers Game}
+
+\cleardoublepage
+\chapter{The Numbers Game}
 
 Jim Palonko never asked for a spirit guide, never wanted those little
 balls of words pinging against his eardrum like some jazz improvisation.
@@ -8828,19 +8793,19 @@ When he looked back, there was another man sitting in his chair. This
 man had a shape, hummed a few bars of those pinging words that used to
 roll around in his ear like seven zeros.
 
-\textbf{\hfill\break
-}
 
-\textbf{Performance Art}
+
+\cleardoublepage
+\chapter{Performance Art}
 
 Women loved Oliver. Oliver loved women but not himself. Oliver edited
 his image, hired a PR agent. Olivia got her start pounding drums in an
 all-girl band every Saturday downtown.
 
-\textbf{\hfill\break
-}
 
-\textbf{Playing for Love}
+
+\cleardoublepage
+\chapter{Playing for Love}
 
 I can't believe I just heard that. Not again. But Ben lobs last night's
 phrase at me once more during our tennis match: ``Irreconcilable
@@ -8901,10 +8866,10 @@ or it may be me spitting out that phrase, ``Irreconcilable
 differences.'' Each syllable pulses hot, moist as a forbidden kiss. I
 can't believe I heard that. Again.
 
-\textbf{\hfill\break
-}
 
-\textbf{Rub Out}
+
+\cleardoublepage
+\chapter{Rub Out}
 
 ``Call me despot, will he? That puny accountant,'' Gina's boss shrieks,
 ``Bring me all the erasers.'' A few swipes. His name disappears from the
@@ -8919,10 +8884,10 @@ Gina draws the last eraser hidden in her bra.
 
 Rub-a-dub, the boss's name is gone.
 
-\textbf{\hfill\break
-}
 
-\textbf{Sharing Space}
+
+\cleardoublepage
+\chapter{Sharing Space}
 
 Sam told Rachel he had to work late tonight and wouldn't be able to see
 her. She chuckled.
@@ -8988,10 +8953,10 @@ she screeched.
 Rachel winked her third eye. This production was a wrap. She turned the
 kaleidoscope once more, wondered where the glass chips would fall.
 
-\textbf{\hfill\break
-}
 
-\textbf{Still a Novice:\\
+
+\cleardoublepage
+\chapter{Still a Novice:\\
 The Mystery Food Reviewer at Work}
 
 I have my scruples, you know. Even for a hundred dollars, I won't
@@ -9041,10 +9006,10 @@ Read my words carefully. After all, I get paid for each one. Don't ask
 my name or look for me where you think I might be found munching on a
 melon. I must dine invisibly until I earn enough to eat inside.
 
-\textbf{\hfill\break
-}
 
-\textbf{Takin' Care of Business}
+
+\cleardoublepage
+\chapter{Takin' Care of Business}
 
 ``You,'' I shout to my buddy who's goin' up the fire escape two steps at
 a time. ``A big rat got you runnin' scared, Sinker?''
@@ -9102,10 +9067,10 @@ out my hand to Sinker but he go down and don't come up again.
 Ain't no one else to watch Sinker's weeds but me. Sinker would be proud.
 I takes good care of `em.
 
-\textbf{\hfill\break
-}
 
-\textbf{Temptation}
+
+\cleardoublepage
+\chapter{Temptation}
 
 There is no Agatha Christie story. Not even a novel by that woman who
 sleuths by alphabet. No Sam Spades required. Just a simple mystery.
@@ -9115,10 +9080,10 @@ Who ate that last chocolate-covered cherry?
 Not ants who cannot carry boxes. Only you, my love. While I slept, you
 saved me from myself, from craven, calorie-laden lust.
 
-\textbf{\hfill\break
-}
 
-\textbf{That's Who I Am}
+
+\cleardoublepage
+\chapter{That's Who I Am}
 
 You may not know my name but you've seen me around. I'm the guy you know
 from some­place but can't quite remember, the one you smile and wave at
@@ -9141,10 +9106,10 @@ Harley, top speed on a straightway, I wouldn't wear a helmet.''
 
 He asks my name.
 
-\textbf{\hfill\break
-}
 
-\textbf{White Sunfire}
+
+\cleardoublepage
+\chapter{White Sunfire}
 
 ``You might call it entrapment,'' Danielle said as we stumbled over
 curbs, beer cans, broken pavement, marking our way to her gallery

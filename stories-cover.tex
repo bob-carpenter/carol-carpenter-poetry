@@ -1,0 +1,144 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+% DOCUMENT CLASS
+% =============================================
+\documentclass[10pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\usepackage{fontspec}
+  \setmainfont[Ligatures=TeX]{Charter}
+  \setsansfont{Lucida Grande}
+  \setmonofont{American Typewriter}
+  \newfontfamily\chapfont{Charter Black}
+  \newfontfamily\secfont{Charter Black}
+  \newfontfamily\handfont{Bradley Hand}
+
+\setlength{\paperwidth}{14.194in}
+\setlength{\paperheight}{9.861in}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\setlength{\textwidth}{14.194in}
+\setlength{\textheight}{9.861in}
+\setlength{\oddsidemargin}{-0.75in}
+\setlength{\evensidemargin}{-0.75in}
+\setlength{\topmargin}{0in}
+
+
+\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{2pt}
+
+\raggedbottom
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\fancyfoot[C]{\small\thepage} % small page number in the center of the footer
+\setlength{\footskip}{36pt}
+
+\usepackage{tikz}
+\usepackage{xcolor}
+\definecolor{avocadogreen}{rgb}{0.34, 0.51, 0.01} % An example of avocado green
+\definecolor{vintageorange}{rgb}{0.95, 0.65, 0.0} % An example of vintage orange
+\definecolor{darkavocadogreen}{rgb}{0.20, 0.30, 0.01} % A darker shade of avocado green
+\definecolor{darkvintageorange}{rgb}{0.70, 0.40, 0.0} % A darker shade of vintage orange
+
+
+\begin{document}
+\pagestyle{empty}
+\pagecolor{darkvintageorange}
+\color{white}
+\noindent
+\begin{minipage}[t][9.861in][t]{6.625in}
+  \noindent
+  \centering
+  \mbox{ } \hfill
+  \begin{minipage}{3in}
+    \vspace*{-4in}
+    \sffamily{\bfseries About the Author}
+    \\[4pt]
+    Carol Carpenter's poems and stories have appeared in numerous online and
+print publication, including: \emph{Connecticut Review, Snake Nation
+Review, Birmingham Arts Journal, Georgetown Review, Caveat Lector,
+Orbis, Arabesques Review,} and various anthologies, the most recent are
+\emph{Not What I Expected} (Paycock Press, 2007) and \emph{Wild Things}
+(Outrider Press, 2008). Her work has been exhibited by art galleries and
+produced as podcasts (\emph{Connecticut Review and Bound Off}). She
+received the Hart Crane Memorial Award, the Richard Eberhart Prize for
+Poetry, the Jean Siegel Pearson Poetry Award, Artists Among Us Award,
+and others. Formerly a college writing instructor, journalist, and
+trainer, she now writes full-time in Livonia, Michigan.
+\\[2pt]
+\mbox{} \hfill {--- Muddy River Poetry Review}, 2010
+\end{minipage}%
+\hfill\mbox{ }
+\end{minipage}%
+\hspace*{-0.125in}
+\begin{minipage}[t][9.861in][t]{0.944in}
+    \rotatebox{90}{%
+       {\fontsize{40}{40}\sffamily\bfseries stories
+         $\mid$ carol carpenter}
+     }
+\end{minipage}%
+\begin{minipage}[t][9.861in][t]{6.625in}
+  \noindent
+  \vspace*{-6in} \mbox{ }
+  \\
+  \hspace*{1.625in} {\fontsize{86}{52}\sffamily\bfseries stories} \qquad
+  \\[-10pt]
+  \hrule height 1pt
+  \vspace*{2pt}
+  \hspace*{3in} {\fontsize{24}{52}\sffamily carol carpenter} \qquad
+  \\[5.5in]
+  \hspace*{3.625in} {\sffamily\large colloquial publishing} \qquad
+  \\
+  \hspace*{3.625in} {\sffamily new york} \qquad
+\end{minipage}
+\end{document}
+
+
