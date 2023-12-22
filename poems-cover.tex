@@ -4,7 +4,7 @@
 %
 % DOCUMENT CLASS
 % =============================================
-\documentclass[10pt]{article}
+\documentclass[openleft,10pt]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -45,9 +45,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 
-\author{}
-\date{}
-
 \usepackage{fontspec}
   \setmainfont[Ligatures=TeX]{Charter}
   \setsansfont{Lucida Grande}
@@ -63,16 +60,14 @@
 
 \setlength{\textwidth}{14.194in}
 \setlength{\textheight}{9.861in}
-\setlength{\oddsidemargin}{-0.75in}
-\setlength{\evensidemargin}{-0.75in}
+\setlength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-1in}
 \setlength{\topmargin}{0in}
 
 
 \renewcommand{\baselinestretch}{1.1}
 \renewcommand{\arraystretch}{1.2}
 \setlength{\tabcolsep}{2pt}
-
-\raggedbottom
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -88,57 +83,75 @@
 \definecolor{darkavocadogreen}{rgb}{0.20, 0.30, 0.01} % A darker shade of avocado green
 \definecolor{darkvintageorange}{rgb}{0.70, 0.40, 0.0} % A darker shade of vintage orange
 
-
+\pagestyle{empty}\pagecolor{avocadogreen}\color{white}
 \begin{document}
-\pagestyle{empty}
-\pagecolor{darkvintageorange}
-\color{white}
-\noindent
+\noindent%
 \begin{minipage}[t][9.861in][t]{6.625in}
   \noindent
   \centering
   \mbox{ } \hfill
-  \begin{minipage}{3in}
-    \vspace*{-4in}
-    \sffamily{\bfseries About the Author}
+  \hspace{0.5in}
+  \begin{minipage}{4.5in}
+    % \hspace*{1in}
+    % \mbox{ } \hfill
+    \includegraphics[width=1.75in]{img/carol-contrast.png}
+    \mbox{ }\hfill\sffamily{\Large\bfseries about~the~author}
     \\[4pt]
-    Carol Carpenter's poems and stories have appeared in numerous online and
-print publication, including: \emph{Connecticut Review, Snake Nation
-Review, Birmingham Arts Journal, Georgetown Review, Caveat Lector,
-Orbis, Arabesques Review,} and various anthologies, the most recent are
-\emph{Not What I Expected} (Paycock Press, 2007) and \emph{Wild Things}
-(Outrider Press, 2008). Her work has been exhibited by art galleries and
-produced as podcasts (\emph{Connecticut Review and Bound Off}). She
-received the Hart Crane Memorial Award, the Richard Eberhart Prize for
-Poetry, the Jean Siegel Pearson Poetry Award, Artists Among Us Award,
-and others. Formerly a college writing instructor, journalist, and
-trainer, she now writes full-time in Livonia, Michigan.
-\\[2pt]
-\mbox{} \hfill {--- Muddy River Poetry Review}, 2010
+    Carol Carpenter's poems and stories have appeared in magazines and
+    journals,  \emph{Monitor}, \emph{Yankee}, 
+    \emph{Redbook}, \emph{Seventeen}, \emph{Christian Science
+      Monitor}, \emph{Indiana Review}, \emph{Carolina Quarterly},
+    \emph{Wisconsin Review}, \emph{Quarterly West}, \emph{Snake Nation
+      Review}, \emph{Birmingham Arts Journal}, \emph{Weber Journal},
+    \emph{Georgetown Review}, \emph{Caveat Lector}, \emph{Orbis},
+    \emph{Arabesques Review}, \emph{Fjords}, \emph{Barnwood},
+    \emph{Hawai'i Review}, \emph{The Pedestal}, \emph{Soundzine}, and
+    \emph{Quiddity}; in podcasts: \emph{Connecticut Review}; as anthologies:
+    \emph{Poetic Voices without Borders} (Gival Press,
+    2005), \emph{Tree Magic} (Sun Shine Press, 2005), \emph{Not What I
+      Expected} (Paycock Press, 2007), \emph{A Walk Through my Garden}
+    (Outrider Press, 2007), \emph{Wild Things} (Outrider Press, 2008)
+    and \emph{Sun Dog} (Florida State University, 1997), \emph{Great
+      American Poetry Show} (Muse Media, 2004), \emph{Generation to
+      Generation} (Papier Mache Press, 1998), \emph{Resourceful Woman}
+    (Visible Ink Press, 1994); and as chapbooks: \emph{Empress of
+      Patton Avenue} (Heartsounds Press). She received 
+    the Hart Crane Memorial Award, the Jean Siegel Pearson Poetry
+    Award, Artists Among Us Award, and first place in the Writer's
+    Digest Annual Poetry Competition (1992).  The Carol Carpenter
+    Memorial Endowed Writing Scholarship is named in her honor at
+    Oakland University, where she taught writing.
 \end{minipage}%
-\hfill\mbox{ }
+\hfill\mbox{ }\hspace*{0.25in}
 \end{minipage}%
+%
 \hspace*{-0.125in}
+%
 \begin{minipage}[t][9.861in][t]{0.944in}
-    \rotatebox{90}{%
+   \vspace*{-3in}
+   \hspace*{0.25in}%
+    \rotatebox{270}{%
        {\fontsize{40}{40}\sffamily\bfseries poems
          $\mid$ carol carpenter}
      }
 \end{minipage}%
+%   
 \begin{minipage}[t][9.861in][t]{6.625in}
   \noindent
-  \vspace*{-6in} \mbox{ }
+  \vspace*{-2.75in} \mbox{ }
   \\
   \hspace*{1.625in} {\fontsize{86}{52}\sffamily\bfseries poems} \qquad
-  \\[-10pt]
-  \hrule height 1pt
+  \\[-4pt]
+  \hspace*{1in}\rule{4.375in}{1.5pt}%  \hrule height 1pt
   \vspace*{2pt}
-  \hspace*{3in} {\fontsize{24}{52}\sffamily carol carpenter} \qquad
+  \hspace*{3.115in} {\fontsize{24}{52}\sffamily carol carpenter} \qquad
   \\[5.5in]
   \hspace*{3.625in} {\sffamily\large colloquial publishing} \qquad
   \\
-  \hspace*{3.625in} {\sffamily new york} \qquad
+  \hspace*{4.585in} {\sffamily new york} \qquad
 \end{minipage}
+\vspace*{-8in}
+\hspace*{-20in}
 \end{document}
 
 
